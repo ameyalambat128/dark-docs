@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Docs 2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header with extension icon and title -->
+      <div class="header">
+        <div class="extension-icon">
+          <img src="../icon.png" alt="Dark Docs 2.0" />
+        </div>
+        <h1 class="title">Dark Docs 2.0</h1>
+      </div>
+
+      <!-- Main toggle area with moon/sun icon -->
+      <div class="toggle-area">
+        <div class="icon-container">
+          <div class="theme-icon" id="theme-icon">
+            <!-- Moon icon (default) -->
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.752-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                fill="currentColor"
+              />
+            </svg>
+            <!-- Sun icon (when enabled) -->
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="4" fill="currentColor" />
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 6.34L4.93 4.93M19.07 19.07l-1.41-1.41"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Modern toggle switch -->
+        <div class="toggle-wrapper">
+          <input type="checkbox" id="toggle_checkbox" class="toggle-input" />
+          <label for="toggle_checkbox" class="toggle-slider"></label>
+        </div>
+      </div>
+
+      <!-- Version info -->
+      <div class="footer">
+        <span class="version">V 2.0.0</span>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

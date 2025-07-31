@@ -1,0 +1,30 @@
+{
+  "name": "Dark Docs 2.0",
+  "description": "Enhanced dark theme for Google Docs with customizable accent colors",
+  "browsers": {
+    "chrome": {
+      "manifest_version": 3,
+      "permissions": ["storage", "activeTab"],
+      "host_permissions": ["*://docs.google.com/*"]
+    },
+    "firefox": {
+      "manifest_version": 2,
+      "permissions": ["storage", "activeTab", "*://docs.google.com/*"]
+    },
+    "edge": {
+      "manifest_version": 3,
+      "permissions": ["storage", "activeTab"],
+      "host_permissions": ["*://docs.google.com/*"]
+    },
+    "opera": {
+      "manifest_version": 3,
+      "permissions": ["storage", "activeTab"],
+      "host_permissions": ["*://docs.google.com/*"]
+    }
+  },
+  "build": {
+    "outputDir": "dist",
+    "assetsDir": "assets",
+    "srcDir": "src"
+  }
+}

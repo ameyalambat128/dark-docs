@@ -1,0 +1,25 @@
+# Build output
+/dist/
+/releases/
+/versions/
+
+# Dependencies
+node_modules/
+
+# Editor Files
+.cursor
+.vscode/
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Temporary folders
+tmp/
+temp/

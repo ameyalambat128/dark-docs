@@ -1,0 +1,33 @@
+{
+  "name": "dark-docs-chrome",
+  "version": "2.0.0",
+  "description": "Enhanced dark theme for Google Docs with customizable accent colors",
+  "main": "package.js",
+  "scripts": {
+    "build": "node package.js",
+    "dev": "node package.js",
+    "clean": "rimraf dist releases",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write src/**/*.{js,css,html}"
+  },
+  "keywords": [
+    "chrome-extension",
+    "firefox-addon",
+    "google-docs",
+    "dark-mode",
+    "theme",
+    "browser-extension"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "archiver": "^6.0.1",
+    "eslint": "^8.57.0",
+    "fs-extra": "^11.2.0",
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
