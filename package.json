@@ -10,9 +10,9 @@
     "format": "turbo format",
     "clean": "turbo clean && rm -rf node_modules",
     "build:extension": "turbo build --filter=extension",
-    "build:landing": "turbo build --filter=landing",
+    "build:www": "turbo build --filter=www",
     "dev:extension": "turbo dev --filter=extension",
-    "dev:landing": "turbo dev --filter=landing"
+    "dev:www": "turbo dev --filter=www"
   },
   "keywords": [
     "chrome-extension",

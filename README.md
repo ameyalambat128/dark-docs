@@ -1,6 +1,6 @@
 # Dark Docs 2.0 - Monorepo
 
-Enhanced dark theme for Google Docs with customizable accent colors, plus a beautiful landing page.
+Enhanced dark theme for Google Docs with customizable accent colors, plus a beautiful website.
 
 ## 🏗️ Monorepo Structure
 
@@ -14,8 +14,8 @@ docs-dark-chrome/
 │   │   ├── build_config.json
 │   │   ├── package.js     # Build script
 │   │   └── releases/      # Built ZIP packages
-│   └── landing/           # Next.js Landing Page
-│       ├── src/           # Landing page source
+│   └── www/               # Next.js Website
+│       ├── src/           # Website source
 │       └── public/        # Static assets
 ├── packages/
 │   ├── shared/            # Shared constants & utilities
@@ -34,7 +34,7 @@ docs-dark-chrome/
 - ⚡ **Fast Performance**: Lightweight and efficient
 - 🔧 **Easy Configuration**: User-friendly popup interface
 
-### Landing Page
+### Website
 
 - 🎯 **Minimalist Design**: Clean, professional aesthetic
 - 📱 **Responsive**: Works on all devices
@@ -81,11 +81,11 @@ pnpm build:extension    # Build extension
 pnpm dev:extension      # Build extension (same as build)
 ```
 
-#### Landing Page Only
+#### Website Only
 
 ```bash
-pnpm build:landing      # Build landing page
-pnpm dev:landing        # Run landing page dev server
+pnpm build:www          # Build website
+pnpm dev:www            # Run website dev server
 ```
 
 ### Development Workflow
@@ -101,8 +101,8 @@ pnpm turbo dev
    - Run `pnpm build:extension`
    - Load `apps/extension/dist/chrome/` in Chrome developer mode
 
-3. **For landing page development:**
-   - Make changes in `apps/landing/src/`
+3. **For website development:**
+- Make changes in `apps/www/src/`
    - Visit `http://localhost:3000` (auto-reloads)
 
 ## 🌐 Multi-Browser Support
@@ -131,13 +131,13 @@ pnpm build:extension
 
 Upload the appropriate ZIP from `apps/extension/releases/` to browser stores.
 
-### Landing Page
+### Website
 
 ```bash
-pnpm build:landing
+pnpm build:www
 ```
 
-Deploy `apps/landing/.next/` to your hosting provider (Vercel, Netlify, etc.).
+Deploy `apps/www/.next/` to your hosting provider (Vercel, Netlify, etc.).
 
 ## 📦 Packages
 
@@ -148,7 +148,7 @@ Deploy `apps/landing/.next/` to your hosting provider (Vercel, Netlify, etc.).
 
 - **Monorepo**: Turborepo + pnpm
 - **Extension**: Vanilla JS + CSS
-- **Landing**: Next.js 15 + TypeScript + Tailwind CSS + Framer Motion
+- **Website**: Next.js 15 + TypeScript + Tailwind CSS + Framer Motion
 - **Shared**: TypeScript + React
 
 ## 📄 License
