@@ -1,7 +1,10 @@
 {
+  "buildCommand": "pnpm build:www",
+  "outputDirectory": "apps/www/.next",
+  "installCommand": "pnpm install --frozen-lockfile",
   "framework": "nextjs",
   "functions": {
-    "src/app/**": {
+    "apps/www/src/app/**": {
       "maxDuration": 30
     }
   }
