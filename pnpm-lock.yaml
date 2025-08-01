@@ -33,7 +33,7 @@ importers:
         specifier: ^5.0.5
         version: 5.0.10
 
-  apps/landing:
+  apps/www:
     dependencies:
       '@dark-docs/shared':
         specifier: workspace:*
