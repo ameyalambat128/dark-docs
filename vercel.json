@@ -1,10 +1,7 @@
 {
-  "buildCommand": "pnpm --filter www build",
-  "outputDirectory": "apps/www/.next",
-  "installCommand": "pnpm install",
   "framework": "nextjs",
   "functions": {
-    "apps/www/src/app/**": {
+    "src/app/**": {
       "maxDuration": 30
     }
   }
