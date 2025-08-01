@@ -4,15 +4,15 @@
   "version": "2.0.0",
   "manifest_version": 2,
   "icons": {
-    "16": "icon.png",
-    "48": "icon.png",
-    "128": "icon-128.png"
+    "16": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon-128.png"
   },
   "action": {
     "default_icon": {
-      "16": "icon.png",
-      "48": "icon.png",
-      "128": "icon-128.png"
+      "16": "icons/icon.png",
+      "48": "icons/icon.png",
+      "128": "icons/icon-128.png"
     },
     "default_popup": "popup/popup.html",
     "default_title": "Dark Docs 2.0 Options"
@@ -42,8 +42,8 @@
       ],
       "resources": [
         "assets/css/*.css",
-        "icon.png",
-        "icon-128.png"
+        "icons/icon.png",
+        "icons/icon-128.png"
       ]
     }
   ]
