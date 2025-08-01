@@ -1,4 +1,4 @@
-# Dark Docs 2.0 - Monorepo
+# Dark Docs 2.0
 
 Enhanced dark theme for Google Docs with customizable accent colors, plus a beautiful website.
 
