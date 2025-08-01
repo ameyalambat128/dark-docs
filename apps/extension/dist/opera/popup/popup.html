@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Docs 2.0</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header with extension icon and title -->
+      <div class="header">
+        <div class="extension-icon">
+          <img src="../icons/icon.png" alt="Dark Docs 2.0" />
+        </div>
+        <h1 class="title">Dark Docs 2.0</h1>
+      </div>
+
+      <!-- Main toggle area with icons on sides -->
+      <div class="toggle-area">
+        <input type="checkbox" id="toggle_checkbox" class="toggle-input" />
+
+        <!-- Moon icon (left side) -->
+        <div class="icon-left">
+          <svg
+            class="moon-icon"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
+        </div>
+
+        <!-- Modern toggle switch -->
+        <div class="toggle-wrapper">
+          <label for="toggle_checkbox" class="toggle-slider"></label>
+        </div>
+
+        <!-- Sun icon (right side) -->
+        <div class="icon-right">
+          <svg
+            class="sun-icon"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2" />
+            <path d="M12 20v2" />
+            <path d="M4.93 4.93l1.41 1.41" />
+            <path d="M17.66 17.66l1.41 1.41" />
+            <path d="M2 12h2" />
+            <path d="M20 12h2" />
+            <path d="M6.34 17.66l-1.41 1.41" />
+            <path d="M19.07 4.93l-1.41 1.41" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Version info -->
+      <div class="footer">
+        <span class="version">V 2.0.0</span>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

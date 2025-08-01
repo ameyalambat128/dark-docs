@@ -1,0 +1,24 @@
+{
+  "name": "@dark-docs/ui",
+  "version": "1.0.0",
+  "description": "Shared UI components for Dark Docs",
+  "main": "index.tsx",
+  "types": "index.tsx",
+  "scripts": {
+    "build": "echo 'No build needed for UI package'",
+    "dev": "echo 'No dev server for UI package'",
+    "lint": "echo 'No linting for UI package'",
+    "format": "echo 'No formatting for UI package'"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "framer-motion": "^11.15.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.7",
+    "typescript": "^5.6.0"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  }
+}

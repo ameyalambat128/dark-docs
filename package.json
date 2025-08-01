@@ -1,33 +1,37 @@
 {
-  "name": "dark-docs-chrome",
+  "name": "dark-docs-monorepo",
   "version": "2.0.0",
-  "description": "Enhanced dark theme for Google Docs with customizable accent colors",
-  "main": "package.js",
+  "description": "Dark Docs 2.0 - Chrome extension and landing page",
+  "private": true,
   "scripts": {
-    "build": "node package.js",
-    "dev": "node package.js",
-    "clean": "rimraf dist releases",
-    "lint": "eslint src/**/*.js",
-    "format": "prettier --write src/**/*.{js,css,html}"
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "turbo format",
+    "clean": "turbo clean && rm -rf node_modules",
+    "build:extension": "turbo build --filter=extension",
+    "build:landing": "turbo build --filter=landing",
+    "dev:extension": "turbo dev --filter=extension",
+    "dev:landing": "turbo dev --filter=landing"
   },
   "keywords": [
     "chrome-extension",
-    "firefox-addon",
+    "nextjs",
     "google-docs",
     "dark-mode",
     "theme",
-    "browser-extension"
+    "browser-extension",
+    "landing-page"
   ],
-  "author": "Your Name",
+  "author": "Ameya Lambat",
   "license": "MIT",
   "devDependencies": {
-    "archiver": "^6.0.1",
-    "eslint": "^8.57.0",
-    "fs-extra": "^11.2.0",
-    "prettier": "^3.2.5",
+    "turbo": "^2.3.3",
     "rimraf": "^5.0.5"
   },
   "engines": {
-    "node": ">=16.0.0"
-  }
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@10.2.1"
 }
