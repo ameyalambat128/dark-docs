@@ -1,6 +1,5 @@
 {
-  "buildCommand": "pnpm build:www",
-  "outputDirectory": "apps/www/.next",
+  "buildCommand": "turbo build --filter=www",
   "framework": "nextjs",
   "functions": {
     "apps/www/src/app/**": {

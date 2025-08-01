@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import Navbar from '@/components/navbar';
-import { Background } from '@/components/background';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
-import Footer from '@/components/footer';
+import Navbar from "@/components/navbar";
+import { Background } from "@/components/background";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Footer from "@/components/footer";
 
 // Google icon component (simplified version)
 function GoogleIcon({ className }: { className?: string }) {
@@ -50,16 +50,16 @@ export default function Home() {
               className="mb-16"
             >
               <h1 className="mb-6 text-center text-4xl font-bold tracking-tight md:text-6xl lg:text-7xl">
-                The Dark Theme,{' '}
+                The Dark Theme,{" "}
                 <span className="font-bold">
                   <GoogleIcon className="lg:w-15 lg:h-15 mx-2 inline h-8 w-8 -translate-y-[6px] md:h-12 md:w-12" />
                   <span className="font-bold">Google</span>
-                </span>{' '}
+                </span>{" "}
                 <span className="font-bold">&ldquo;Forgot&rdquo;</span>
               </h1>
 
               <p className="mx-auto max-w-2xl text-lg leading-relaxed text-gray-400 md:text-xl">
-                Experience Google Docs like never before with{' '}
+                Experience Google Docs like never before with{" "}
                 <a
                   href="https://chromewebstore.google.com/detail/docs-dark-20/djmmkojigpkdagglmjjdjiddopgdchcn?authuser=0&hl=en"
                   target="_blank"
@@ -67,7 +67,7 @@ export default function Home() {
                   className="tracking-tight underline transition-colors hover:text-gray-100"
                 >
                   Dark Docs 2.0
-                </a>{' '}
+                </a>{" "}
                 that&apos;s easy on your eyes and beautiful to work with.
               </p>
             </motion.div>
