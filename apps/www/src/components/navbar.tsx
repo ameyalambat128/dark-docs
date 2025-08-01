@@ -1,12 +1,12 @@
-'use client';
-import { useSelectedLayoutSegment } from 'next/navigation';
-import Link from 'next/link';
-import Image from 'next/image';
-import clsx from 'clsx';
+"use client";
+import { useSelectedLayoutSegment } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
+import clsx from "clsx";
 
 function Logo() {
   return (
-    <Link href={'/'} className="flex items-center">
+    <Link href={"/"} className="flex items-center">
       <Image
         src="/icon.png"
         alt="Logo"
@@ -27,7 +27,7 @@ function NavLink({
   children: React.ReactNode;
   className: string;
 }) {
-  const segment = useSelectedLayoutSegment() || '';
+  const segment = useSelectedLayoutSegment() || "";
   const active = href === `/${segment}`;
 
   // console.log({ segment, href, active });
@@ -35,10 +35,10 @@ function NavLink({
     <Link
       href={href}
       className={clsx(
-        'text-md p-2 md:text-base lg:text-lg',
+        "text-md p-2 md:text-base lg:text-lg",
         active
-          ? 'text-gray-900 dark:text-gray-100'
-          : ' text-gray-400 ease-in-out hover:text-gray-900 dark:text-gray-600 hover:dark:text-gray-100',
+          ? "text-gray-900 dark:text-gray-100"
+          : " text-gray-400 ease-in-out hover:text-gray-900 dark:text-gray-600 hover:dark:text-gray-100",
         className
       )}
     >
@@ -52,9 +52,6 @@ export default function Navbar() {
     <nav className="flex items-center justify-between py-4 lg:py-8">
       <Logo />
       <section className="grid grid-flow-col md:gap-4">
-        <NavLink href="/" className="hidden md:block">
-          Home
-        </NavLink>
         <Link
           href="https://chromewebstore.google.com/detail/docs-dark-20/djmmkojigpkdagglmjjdjiddopgdchcn?authuser=0&hl=en"
           target="_blank"
