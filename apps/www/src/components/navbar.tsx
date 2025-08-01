@@ -1,5 +1,5 @@
 'use client';
-import { usePathname, useSelectedLayoutSegment } from 'next/navigation';
+import { useSelectedLayoutSegment } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import clsx from 'clsx';
@@ -27,8 +27,8 @@ function NavLink({
   children: React.ReactNode;
   className: string;
 }) {
-  let segment = useSelectedLayoutSegment() || '';
-  let active = href === `/${segment}`;
+  const segment = useSelectedLayoutSegment() || '';
+  const active = href === `/${segment}`;
 
   // console.log({ segment, href, active });
   return (

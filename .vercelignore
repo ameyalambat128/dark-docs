@@ -1,11 +1,11 @@
 # Ignore extension and other apps
 apps/extension/
+packages/
 *.md
 .git/
 node_modules/
 .turbo/
 .DS_Store
 
-# Keep www app and shared packages
+# Keep only www app
 !apps/www/
-!packages/
