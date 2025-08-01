@@ -1,5 +1,5 @@
 {
-  "buildCommand": "turbo build --filter=www",
+  "buildCommand": "turbo run build --filter=www",
   "framework": "nextjs",
   "functions": {
     "apps/www/src/app/**": {
