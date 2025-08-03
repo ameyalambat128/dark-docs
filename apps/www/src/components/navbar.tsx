@@ -50,7 +50,12 @@ function NavLink({
 export default function Navbar() {
   return (
     <nav className="flex items-center justify-between py-4 lg:py-8">
-      <Logo />
+      <div className="flex items-center gap-2 md:gap-4">
+        <Logo />
+        <span className="text-lg font-bold tracking-tighter md:text-xl">
+          Dark Docs 2.0
+        </span>
+      </div>
       <section className="grid grid-flow-col md:gap-4">
         <Link
           href="https://chromewebstore.google.com/detail/docs-dark-20/djmmkojigpkdagglmjjdjiddopgdchcn?authuser=0&hl=en"
