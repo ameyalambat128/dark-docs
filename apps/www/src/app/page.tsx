@@ -25,7 +25,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="mb-16"
+              className="mb-8 lg:mb-12"
             >
               <h1 className="mb-6 text-center text-4xl font-bold tracking-tight md:text-6xl lg:text-7xl">
                 The Dark Theme,{" "}
@@ -54,7 +54,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="mb-16"
+              className="mb-8 lg:mb-12"
             >
               <AddToBrowserButton />
             </motion.div>
