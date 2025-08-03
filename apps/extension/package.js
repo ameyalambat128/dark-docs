@@ -41,7 +41,7 @@ async function copySourceFiles() {
   await fs.copy(SRC_DIR, DIST_DIR, {
     filter: (src) => {
       const relativePath = path.relative(SRC_DIR, src);
-      return !relativePath.includes('node_modules');
+      return !relativePath.includes('node_modules') && !relativePath.includes('.DS_Store');
     },
   });
 
@@ -70,11 +70,17 @@ async function generateManifests() {
       manifest_version: browserConfig.manifest_version,
     };
 
-    // Browser-specific permissions
+    // Browser-specific permissions and action handling
     if (browserConfig.manifest_version === 2) {
       // Firefox (Manifest V2)
       manifest.permissions = browserConfig.permissions;
       delete manifest.host_permissions;
+      
+      // Convert action to browser_action for Firefox
+      if (manifest.action) {
+        manifest.browser_action = manifest.action;
+        delete manifest.action;
+      }
     } else {
       // Chrome/Edge (Manifest V3)
       manifest.permissions = browserConfig.permissions;
@@ -87,14 +93,17 @@ async function generateManifests() {
     const browserDir = path.join(DIST_DIR, browserName);
     await fs.ensureDir(browserDir);
 
-    // Copy all files from dist to browser-specific directory (except other browser dirs)
+    // Copy all files from dist to browser-specific directory (except other browser dirs and .DS_Store)
     const items = await fs.readdir(DIST_DIR);
     for (const item of items) {
       const itemPath = path.join(DIST_DIR, item);
       const stat = await fs.stat(itemPath);
 
-      // Skip other browser directories
+      // Skip other browser directories and .DS_Store files
       if (stat.isDirectory() && Object.keys(config.browsers).includes(item)) {
+        continue;
+      }
+      if (item === '.DS_Store') {
         continue;
       }
 

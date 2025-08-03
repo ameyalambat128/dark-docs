@@ -4,14 +4,14 @@
   "version": "2.0.1",
   "manifest_version": 2,
   "icons": {
-    "16": "icons/icon.png",
-    "48": "icons/icon.png",
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
     "128": "icons/icon-128.png"
   },
   "action": {
     "default_icon": {
-      "16": "icons/icon.png",
-      "48": "icons/icon.png",
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
       "128": "icons/icon-128.png"
     },
     "default_popup": "popup/popup.html",
@@ -36,15 +36,8 @@
     "*://docs.google.com/*"
   ],
   "web_accessible_resources": [
-    {
-      "matches": [
-        "*://docs.google.com/*"
-      ],
-      "resources": [
-        "assets/css/*.css",
-        "icons/icon.png",
-        "icons/icon-128.png"
-      ]
-    }
+    "assets/css/*.css",
+    "icons/icon.png",
+    "icons/icon-128.png"
   ]
 }
