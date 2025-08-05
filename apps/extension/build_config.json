@@ -5,21 +5,31 @@
     "chrome": {
       "manifest_version": 3,
       "permissions": ["storage", "activeTab"],
-      "host_permissions": ["*://docs.google.com/*"]
+      "host_permissions": ["*://docs.google.com/*"],
+      "web_accessible_resources_format": "v3"
     },
     "firefox": {
-      "manifest_version": 2,
-      "permissions": ["storage", "activeTab", "*://docs.google.com/*"]
+      "manifest_version": 3,
+      "permissions": ["storage", "activeTab"],
+      "host_permissions": ["*://docs.google.com/*"],
+      "web_accessible_resources_format": "v3",
+      "browser_specific_settings": {
+        "gecko": {
+          "id": "{6e9737c2-6f10-43ae-862c-6d4815ded3ae}"
+        }
+      }
     },
     "edge": {
       "manifest_version": 3,
       "permissions": ["storage", "activeTab"],
-      "host_permissions": ["*://docs.google.com/*"]
+      "host_permissions": ["*://docs.google.com/*"],
+      "web_accessible_resources_format": "v3"
     },
     "opera": {
       "manifest_version": 3,
       "permissions": ["storage", "activeTab"],
-      "host_permissions": ["*://docs.google.com/*"]
+      "host_permissions": ["*://docs.google.com/*"],
+      "web_accessible_resources_format": "v3"
     }
   },
   "build": {

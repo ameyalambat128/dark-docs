@@ -89,6 +89,36 @@ async function generateManifests() {
       }
     }
 
+    // Handle browser-specific requirements
+    if (browserConfig.browser_specific_settings) {
+      manifest.browser_specific_settings = browserConfig.browser_specific_settings;
+    }
+
+    // Ensure web_accessible_resources is in correct format
+    if (browserConfig.web_accessible_resources_format === 'v3') {
+      // Ensure it's in V3 format (objects with resources and matches)
+      if (manifest.web_accessible_resources && Array.isArray(manifest.web_accessible_resources)) {
+        // If it's already in V3 format, keep it
+        if (manifest.web_accessible_resources.length > 0 && 
+            typeof manifest.web_accessible_resources[0] === 'object' && 
+            manifest.web_accessible_resources[0].resources) {
+          // Already in V3 format, no changes needed
+        } else {
+          // Convert from V2 format to V3 format
+          const resources = [];
+          manifest.web_accessible_resources.forEach(resource => {
+            if (typeof resource === 'string') {
+              resources.push(resource);
+            }
+          });
+          manifest.web_accessible_resources = [{
+            resources: resources,
+            matches: ["*://docs.google.com/*"]
+          }];
+        }
+      }
+    }
+
     // Create browser-specific directory and copy files
     const browserDir = path.join(DIST_DIR, browserName);
     await fs.ensureDir(browserDir);
