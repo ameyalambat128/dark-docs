@@ -42,17 +42,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (iconLeft && iconLeft.classList) {
         if (isDarkMode) {
-          iconLeft.classList.add('active');
-        } else {
           iconLeft.classList.remove('active');
+        } else {
+          iconLeft.classList.add('active');
         }
       }
 
       if (iconRight && iconRight.classList) {
         if (isDarkMode) {
-          iconRight.classList.remove('active');
-        } else {
           iconRight.classList.add('active');
+        } else {
+          iconRight.classList.remove('active');
         }
       }
     } catch (error) {

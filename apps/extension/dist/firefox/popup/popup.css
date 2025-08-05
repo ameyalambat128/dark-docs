@@ -81,24 +81,24 @@ body {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Default state - moon active, sun dimmed */
-.moon-icon {
+/* Default state - sun active, moon dimmed (light mode) */
+.sun-icon {
   opacity: 1;
   transform: scale(1);
 }
 
-.sun-icon {
+.moon-icon {
   opacity: 0.3;
   transform: scale(0.9);
 }
 
-/* When toggle is checked - sun active, moon dimmed */
-.toggle-input:checked ~ .icon-right .sun-icon {
+/* When toggle is checked - moon active, sun dimmed (dark mode) */
+.toggle-input:checked ~ .icon-right .moon-icon {
   opacity: 1;
   transform: scale(1);
 }
 
-.toggle-input:checked ~ .icon-left .moon-icon {
+.toggle-input:checked ~ .icon-left .sun-icon {
   opacity: 0.3;
   transform: scale(0.9);
 }
