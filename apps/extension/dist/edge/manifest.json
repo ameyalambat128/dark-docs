@@ -38,8 +38,15 @@
     "*://docs.google.com/*"
   ],
   "web_accessible_resources": [
-    "assets/css/*.css",
-    "icons/icon.png",
-    "icons/icon-128.png"
+    {
+      "resources": [
+        "assets/css/*.css",
+        "icons/icon.png",
+        "icons/icon-128.png"
+      ],
+      "matches": [
+        "*://docs.google.com/*"
+      ]
+    }
   ]
 }

@@ -62,6 +62,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Initialize popup state
   function initializePopup() {
+    // Get version from manifest
+    const manifest = chrome.runtime.getManifest();
+    const versionDisplay = document.getElementById('version-display');
+    if (versionDisplay && manifest.version) {
+      versionDisplay.textContent = `V ${manifest.version}`;
+    }
+
     chrome.storage.local.get([STORAGE_KEY], function (result) {
       const isEnabled = result[STORAGE_KEY] !== false; // Default to enabled
       if (toggleElement) {
