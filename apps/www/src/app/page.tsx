@@ -28,12 +28,26 @@ export default function Home() {
               className="mb-8 lg:mb-12"
             >
               <h1 className="mb-6 text-center text-4xl font-bold tracking-tight md:text-6xl lg:text-7xl">
-                The Dark Theme,{" "}
-                <span className="font-bold">
-                  <GoogleIcon className="lg:w-15 lg:h-15 mx-2 inline h-8 w-8 -translate-y-[6px] md:h-12 md:w-12" />
-                  <span className="font-bold">Google</span>
-                </span>{" "}
-                <span className="font-bold">&ldquo;Forgot&rdquo;</span>
+                {/* Mobile version - two lines */}
+                <div className="block sm:hidden">
+                  <div>The Dark Theme,</div>
+                  <div>
+                    <span className="font-bold">
+                      <GoogleIcon className="mx-2 inline h-8 w-8 -translate-y-[6px]" />
+                      <span className="font-bold">Google</span>
+                    </span>{" "}
+                    <span className="font-bold">&ldquo;Forgot&rdquo;</span>
+                  </div>
+                </div>
+                {/* Desktop version - single line */}
+                <div className="hidden sm:block">
+                  The Dark Theme,{" "}
+                  <span className="font-bold">
+                    <GoogleIcon className="lg:w-15 lg:h-15 mx-2 inline h-8 w-8 -translate-y-[6px] md:h-12 md:w-12" />
+                    <span className="font-bold">Google</span>
+                  </span>{" "}
+                  <span className="font-bold">&ldquo;Forgot&rdquo;</span>
+                </div>
               </h1>
 
               <p className="mx-auto max-w-2xl text-lg leading-relaxed text-gray-400 md:text-xl">
