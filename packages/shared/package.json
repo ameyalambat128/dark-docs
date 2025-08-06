@@ -8,7 +8,8 @@
     "build": "echo 'No build needed for shared package'",
     "dev": "echo 'No dev server for shared package'",
     "lint": "echo 'No linting for shared package'",
-    "format": "echo 'No formatting for shared package'"
+    "format": "echo 'No formatting for shared package'",
+    "format:check": "echo 'No formatting check for shared package'"
   },
   "dependencies": {},
   "devDependencies": {}

@@ -8,7 +8,8 @@
     "build": "echo 'No build needed for UI package'",
     "dev": "echo 'No dev server for UI package'",
     "lint": "echo 'No linting for UI package'",
-    "format": "echo 'No formatting for UI package'"
+    "format": "echo 'No formatting for UI package'",
+    "format:check": "echo 'No formatting check for UI package'"
   },
   "dependencies": {
     "react": "^19.1.0",

@@ -7,8 +7,8 @@
 
 class log {
   static debug(...args) {
-    return;
-    console.log('[DEBUG]', ...args);
+    // Debug logging disabled - uncomment the line below to enable
+    // console.log('[DEBUG]', ...args);
   }
   static info(...args) {
     console.log('[INFO]', ...args);
