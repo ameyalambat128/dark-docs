@@ -63,13 +63,6 @@ export const metadata: Metadata = {
         alt: "Dark Docs 2.0 extension preview showing Google Docs in dark mode",
         type: "image/png",
       },
-      {
-        url: "https://darkdocs.ameyalambat.com/hero-promo.png",
-        width: 1200,
-        height: 630,
-        alt: "Dark Docs 2.0 - Beautiful dark theme for Google Docs",
-        type: "image/png",
-      },
     ],
     locale: "en_US",
     type: "website",
@@ -81,7 +74,7 @@ export const metadata: Metadata = {
     title: "Dark Docs 2.0 - The Dark Theme Google Forgot",
     description:
       "Transform Google Docs with a beautiful dark theme. Free extension with 4.8★ rating. Reduces eye strain & enhances productivity. Available for all browsers.",
-    images: ["https://darkdocs.ameyalambat.com/hero-promo.png"],
+    images: ["https://darkdocs.ameyalambat.com/hero-alt.png"],
   },
   robots: {
     index: true,
@@ -143,7 +136,7 @@ const jsonLd = {
   dateModified: new Date().toISOString().split("T")[0],
   keywords:
     "Google Docs dark theme, dark mode extension, productivity tools, eye strain reduction",
-  screenshot: "https://darkdocs.ameyalambat.com/hero-promo.png",
+  screenshot: "https://darkdocs.ameyalambat.com/hero-alt.png",
   downloadUrl:
     "https://chromewebstore.google.com/detail/docs-dark-20/djmmkojigpkdagglmjjdjiddopgdchcn",
 };
