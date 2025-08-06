@@ -1,0 +1,13 @@
+/* TEAM */
+    Developer: Ameya Lambat
+    Contact: https://ameyalambat.com
+    From: India
+
+/* SITE */
+    Last update: 2024/12/19
+    Language: English
+    Doctype: HTML5
+    IDE: VS Code
+    Standards: HTML5, CSS3, JavaScript ES6+
+    Components: Next.js, React, TypeScript, Tailwind CSS
+    Software: Node.js, pnpm, Turborepo 

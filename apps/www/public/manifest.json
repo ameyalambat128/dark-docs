@@ -1,0 +1,57 @@
+{
+  "name": "Dark Docs 2.0 - The Dark Theme Google Forgot",
+  "short_name": "Dark Docs 2.0",
+  "description": "Transform your Google Docs experience with Dark Docs 2.0 - the beautiful dark theme extension that reduces eye strain and enhances productivity.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111010",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/hero-promo.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Dark Docs 2.0 Extension Preview"
+    },
+    {
+      "src": "/hero-alt.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Google Docs with Dark Theme"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Get Extension",
+      "short_name": "Download",
+      "description": "Download Dark Docs 2.0 extension",
+      "url": "https://chromewebstore.google.com/detail/docs-dark-20/djmmkojigpkdagglmjjdjiddopgdchcn",
+      "icons": [
+        {
+          "src": "/icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}

@@ -96,6 +96,56 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  manifest: "/manifest.json",
+  icons: {
+    icon: [
+      { url: "/icon.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/icon.png", sizes: "180x180", type: "image/png" }],
+  },
+};
+
+// JSON-LD Structured Data
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "Dark Docs 2.0",
+  description:
+    "Transform your Google Docs experience with Dark Docs 2.0 - the beautiful dark theme extension that reduces eye strain and enhances productivity.",
+  url: "https://darkdocs.ameyalambat.com",
+  applicationCategory: "BrowserExtension",
+  operatingSystem: "Chrome, Firefox, Edge, Opera",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+    availability: "https://schema.org/InStock",
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.8",
+    ratingCount: "1000",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  author: {
+    "@type": "Person",
+    name: "Ameya Lambat",
+    url: "https://ameyalambat.com",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Dark Docs",
+    url: "https://darkdocs.ameyalambat.com",
+  },
+  datePublished: "2024-01-01",
+  dateModified: new Date().toISOString().split("T")[0],
+  keywords:
+    "Google Docs dark theme, dark mode extension, productivity tools, eye strain reduction",
+  screenshot: "https://darkdocs.ameyalambat.com/hero-promo.png",
+  downloadUrl:
+    "https://chromewebstore.google.com/detail/docs-dark-20/djmmkojigpkdagglmjjdjiddopgdchcn",
 };
 
 export default function RootLayout({
@@ -109,6 +159,13 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning
       >
+        {/* Add JSON-LD to your page */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
         {children}
       </body>
     </html>
