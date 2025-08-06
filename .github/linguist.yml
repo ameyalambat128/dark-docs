@@ -1,0 +1,26 @@
+# GitHub Linguist configuration
+# This file helps GitHub properly detect and categorize languages in your repository
+
+# Exclude these paths from language detection
+vendored:
+  - apps/extension/dist/
+  - apps/extension/releases/
+  - apps/www/.next/
+  - apps/www/out/
+  - node_modules/
+  - .turbo/
+
+# Exclude these file types from language detection
+documentation:
+  - "*.md"
+  - "*.txt"
+  - "*.pdf"
+
+# Exclude these files from language detection
+generated:
+  - "pnpm-lock.yaml"
+  - "package-lock.json"
+  - "yarn.lock"
+
+# Override language detection for specific files
+# This helps when GitHub misidentifies file types 

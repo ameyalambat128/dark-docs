@@ -1,13 +1,22 @@
 {
   "name": "dark-docs-monorepo",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Dark Docs 2.0 - Chrome extension and landing page",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ameyalambat128/dark-docs-2.0.git"
+  },
+  "homepage": "https://darkdocs.ameyalambat.com",
+  "bugs": {
+    "url": "https://github.com/ameyalambat128/dark-docs-2.0/issues"
+  },
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "turbo format",
+    "format:check": "turbo format --check",
     "clean": "turbo clean && rm -rf node_modules",
     "build:extension": "turbo build --filter=extension",
     "build:www": "turbo build --filter=www",
@@ -21,7 +30,13 @@
     "dark-mode",
     "theme",
     "browser-extension",
-    "landing-page"
+    "landing-page",
+    "firefox-extension",
+    "edge-extension",
+    "opera-extension",
+    "manifest-v3",
+    "turborepo",
+    "monorepo"
   ],
   "author": "Ameya Lambat",
   "license": "MIT",
