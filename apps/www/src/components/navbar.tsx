@@ -1,8 +1,6 @@
 "use client";
-import { useSelectedLayoutSegment } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import clsx from "clsx";
 
 function Logo() {
   return (
@@ -14,35 +12,6 @@ function Logo() {
         height={40}
         className="h-auto max-w-full drop-shadow-2xl"
       />
-    </Link>
-  );
-}
-
-function NavLink({
-  href,
-  children,
-  className,
-}: {
-  href: string;
-  children: React.ReactNode;
-  className: string;
-}) {
-  const segment = useSelectedLayoutSegment() || "";
-  const active = href === `/${segment}`;
-
-  // console.log({ segment, href, active });
-  return (
-    <Link
-      href={href}
-      className={clsx(
-        "text-md p-2 md:text-base lg:text-lg",
-        active
-          ? "text-gray-900 dark:text-gray-100"
-          : " text-gray-400 ease-in-out hover:text-gray-900 dark:text-gray-600 hover:dark:text-gray-100",
-        className
-      )}
-    >
-      {children}
     </Link>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const browsers = [
   {
@@ -52,9 +53,11 @@ export default function AddToBrowserButton() {
         rel="noopener noreferrer"
         className="flex items-center gap-2 rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-black shadow-sm transition hover:bg-gray-100"
       >
-        <img
+        <Image
           src={browser.icon}
           alt={`${browser.name} icon`}
+          width={20}
+          height={20}
           className="h-5 w-5"
         />
         Add to {browser.name}
