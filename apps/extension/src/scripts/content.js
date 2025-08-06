@@ -7,16 +7,21 @@
 
 class log {
   static debug(...args) {
+    // eslint-disable-next-line no-console
     return;
+    // eslint-disable-next-line no-console
     console.log('[DEBUG]', ...args);
   }
   static info(...args) {
+    // eslint-disable-next-line no-console
     console.log('[INFO]', ...args);
   }
   static warn(...args) {
+    // eslint-disable-next-line no-console
     console.log('\x1b[33m%s\x1b[0m', '[WARN]', ...args);
   }
   static error(...args) {
+    // eslint-disable-next-line no-console
     console.log('\x1b[31m%s\x1b[0m', '[ERROR]', ...args);
   }
 }
@@ -49,6 +54,7 @@ if (typeof browser != 'undefined') {
  * @param {String} key
  * @param {*} value
  */
+// eslint-disable-next-line no-unused-vars
 function update_storage(storage_object, key, value) {
   browser_namespace.storage.local.get(storage_object, function (data) {
     if (data[storage_object] != null) data[storage_object][key] = value;
@@ -71,7 +77,9 @@ const mode_off = 0;
 const mode_dark = 1;
 const mode_light = 2;
 
+// eslint-disable-next-line no-unused-vars
 var mode;
+// eslint-disable-next-line no-unused-vars
 var dark_mode_options;
 var toggle_state = false;
 
@@ -120,6 +128,7 @@ function inject_dark_mode() {
 /**
  * INJECTS LIGHT MODE CSS (DISABLED FOR NOW)
  */
+// eslint-disable-next-line no-unused-vars
 function inject_light_mode() {
   mode = mode_light;
 
