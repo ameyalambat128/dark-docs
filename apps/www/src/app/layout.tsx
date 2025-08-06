@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     siteName: "Dark Docs 2.0",
     images: [
       {
-        url: "https://darkdocs.ameyalambat.com/og.png",
+        url: "https://darkdocs.ameyalambat.com/og.png?v=2",
         width: 1200,
         height: 630,
         alt: "Dark Docs 2.0 extension preview showing Google Docs in dark mode",
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     title: "Dark Docs 2.0 - The Dark Theme Google Forgot",
     description:
       "Transform Google Docs with a beautiful dark theme. Free extension with 4.8★ rating. Reduces eye strain & enhances productivity. Available for all browsers.",
-    images: ["https://darkdocs.ameyalambat.com/og.png"],
+    images: ["https://darkdocs.ameyalambat.com/og.png?v=2"],
   },
   robots: {
     index: true,
