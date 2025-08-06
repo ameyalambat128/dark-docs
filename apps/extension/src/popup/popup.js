@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Check if toggle element exists
   if (!toggleElement) {
-    // eslint-disable-next-line no-console
     console.error('Toggle checkbox element not found');
     return;
   }
@@ -57,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
     } catch (error) {
-      // eslint-disable-next-line no-console
       console.error('Error updating theme icons:', error);
     }
   }
@@ -83,7 +81,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // Handle toggle change
   function handleToggleChange() {
     if (!toggleElement) {
-      // eslint-disable-next-line no-console
       console.error('Toggle element not available');
       return;
     }
@@ -101,7 +98,6 @@ document.addEventListener('DOMContentLoaded', function () {
           function (response) {
             if (chrome.runtime.lastError) {
               // Tab might not have the content script loaded
-              // eslint-disable-next-line no-console
               console.log(
                 'Message sending failed - this is normal for non-Google Docs tabs'
               );
